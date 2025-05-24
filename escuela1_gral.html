@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="=width=device-width, initial-scale=1">
+  <title>miprofesor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+  <title>SISTEMA ESCUELA</title>
+
+  <div class="container"style="background-color: rgb(133, 134, 134);">
+    <H3>MI PROFESOR</H3>
+  </div>
+</HEAD>
+
+<BODY>
+  <!--nueva barra-->
+  <nav  class="navbar navbar-light bg-light  fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MI PROFESOR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MI PROFESOR</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <!--<a class="nav-link" href="#">AULA VIRTUAL</a>-->
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                GESTION ACADEMICAS <BR>
+                EVALUACIONES
+
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light">
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#">CARGA DE EVALUACIONES</a></li>
+                <li><a class="dropdown-item" href="#">LISTADO DE EVALUACIONES</a></li>
+                <li><a class="dropdown-item" href="#">INSTANCIA DE RECUPERACION </a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <BR>
+            <BR>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                GESTION DE USUARIO <BR>
+                ALUMNOS
+
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light">
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#">ALUMNOS POR DIVISION</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--nueva barra-->
+  <div class="container py-5">
+    <div style="text-align: center;" class="row">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4" style="background-color: rgb(149, 153, 153);margin: 1%;
+  padding: 1%;border-radius: 10%;" >
+        <br>
+        <br>
+        <h3>CARGA DE EVALUACIONES</h3>  
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Escolar
+          </button>
+          
+            <select class="dropdown-menu dropdown-menu-dark" name="lista_escuela" id="">
+              <option value="guardiola">Escuela secundaria Guardiola</option>
+              <option value="beltran">Escuela secundaria Beltran</option>
+              <option value="boero">Escuela secundaria tecnica Boero</option>
+              <option value="cecilio_avila">Escuela secundaria Cecilio Avila</option>
+              <option value="nuevo_cuyo">Escuela secundaria Nuevo Cuyo</option>
+              <option value="agrotecnica_25_mayo">Escuela secundaria tecnica 25 de Mayo</option>
+            </select>
+            
+        </div>
+        <br>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ciclo escolar
+          </button>
+          <select class="dropdown-menu dropdown-menu-dark" name="ciclo" id="">
+            <option value="ciclo_basico">CICLO BASICO</option>
+            <option value="ciclo_orientado">CICLO ORIENTADO</option>
+          </select>
+
+        </div>
+        <br>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cursos
+          </button>
+          <select class="dropdown-menu dropdown-menu-dark" name="cursos" id="">
+            <option value="3_1">3 ero 1 era</option>
+            <option value="3_2">3 ero 2 da</option>
+            <option value="4_2">4 to 2 da</option>
+            <option value="6_2">6 to 2 da</option>
+            <option value="2_9">2 da 9 na</option>
+          </select>
+
+        </div>
+        <br>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cuatrimestre
+          </button>
+          <select class="dropdown-menu dropdown-menu-dark" name="cuatrimestre" id="">
+            <option value="1_cuatrimestre">Primer cuatrimestre</option>
+            <option value="2_cuatrimestre">Segundo cuatrimestre</option>
+          </select>
+          </div>     
+      </div>    
+    <!--BOTONES-->
+    <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7"style="background-color:green;">      
+      
+    </div>
+  </div>
+  </div>
+  <DIV>
+    <div class="feature-content">
+      <nav class="row row3">
+        <div class="main-row">
+          <a class="btn btn-success" href="listado_materia.php">LISTADO MATERIAS</a>
+          <a class="btn btn-success" href="listado_alumno.php">LISTADO DE ALUMNOS</a>
+          <a class="btn btn-success" href="listado_curso.php">LISTADO CURSOS</a>
+          <a class="btn btn-success" href="listado_docente.php">LISTADO DE DOCENTES</a>
+          <a class="btn btn-success" href="formulario_planilla.php">PLANILLAS DE CURSO</a>
+        </div>
+      </nav>
+      </div>
+  </DIV>
+  <DIV>
+    <div class="feature-content">
+      <nav class="row row3">
+        <div class="main-row">
+          <a class="btn btn-success" href="formulario_alumno.php" role="button">Formulario alumno</a>
+          <a class="btn btn-success" href="formulario_curso.php" role="button">Formulario curso</a>
+          <a class="btn btn-success" href="formulario_docente.php" role="button">Formulario docente</a>
+          <a class="btn btn-success" href="formulario_materia.php" role="button">Formulario materia</a>
+        </div>
+      </nav>
+      </div>
+  </DIV>
+  <div>
+  <!--contact Section-->
+ <section class="contact">
+  <div class="main-contact">
+      <div class="contact-content">
+          <h5>Comienza ahora</h5>
+          <li><a href="#">Últimas notas</a></li>
+          <li><a href="#">Guía actualizada</a></li>
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">Modo Oscuro</a></li>
+      </div>
+
+      <div class="contact-content">
+          <h5>Explora</h5>
+          <li><a href="#">Prototipo</a></li>
+          <li><a href="#">Diseño de Sistemas</a></li>
+          <li><a href="#">Precios</a></li>
+          <li><a href="#">Seguridad</a></li>
+      </div>
+
+      <div class="contact-content">
+          <h5>Recursos</h5>
+          <li><a href="#">Mejores Prácticas</a></li>
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">Desarrolladores</a></li>
+          <li><a href="#">Aprende diseño</a></li>
+      </div>
+
+      <div class="contact-content">
+          <h5>Comunidad</h5>
+          <li><a href="#">Foros</a></li>
+          <li><a href="#">Código de Conducta</a></li>
+          <li><a href="#">Contribución</a></li>
+          <li><a href="#">API de Referencia</a></li>
+      </div>
+  </div>
+</section>
+<!--Copyright, se modifica nombre-->
+<div class="end-text">
+  <p>© 2024 All Rights Reserved by Miguel Castillo</p>
+</div>
+
+<!--ScrollReveal Script-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--JS Link-->
+<script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
