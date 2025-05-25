@@ -15,9 +15,9 @@
     <title>SISTEMA ESCUELA</title>
     <a href="#" class="logo"><img src="logo.jpg"></a>
             <ul class="navbar">
-                <li><a href="listado_curso.php" class="active">CURSOS</a></li>
-                <li><a href="escuela1_gral.html" >INICIO</a></li>
-                <li><a href="listado_alumno.php">ALUMNOS</a></li>                
+                <li><a href="listado_curso.html" class="active">CURSOS</a></li>
+                <li><a href="index.html" >INICIO</a></li>
+                <li><a href="listado_alumno.html">ALUMNOS</a></li>                
             </ul> 
 </HEAD>
 <body>
@@ -39,8 +39,8 @@
         <div class="main-row">
         <div>
             <h3></h3>            
-<a href="formulario_curso.php" class="btn">AGREGAR CURSO</a>
-<a href="escuela1_gral.html"class="btn" >VOLVER</a>
+<a href="formulario_curso.html" class="btn">AGREGAR CURSO</a>
+<a href="index.html"class="btn" >VOLVER</a>
         </div>
         </div>
     </div>
